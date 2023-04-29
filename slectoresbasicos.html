@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de elementos con CSS</title>
+</head>
+<style>
+    /* Este es un archivo CSS básico que utiliza los selectores CSS */
+
+    /* Selector de tipo */
+    div {
+        color: red;
+    }
+
+    p {
+        color: blue;
+    }
+
+    h1 {
+        color: green;
+    }
+
+    /* Selector de clase */
+    .card {
+        background-color: yellow;
+    }
+
+    .card1 {
+        color: purple;
+    }
+
+    .card2 {
+        color: orange;
+    }
+
+    /* Selector de identificador único (id) */
+    #eliminar {
+        background-color: red;
+    }
+
+    /* Selector de atributo */
+    a[href="https://disrup3.com"] {
+        background-color: blue;
+    }
+
+    /* Selector universal */
+    * {
+        background-color: gray;
+    }
+</style>
+
+<body>
+    <!-- Selector de tipo -->
+    <div>Este es un div</div>
+    <p>Este es un párrafo</p>
+    <h1>Este es un encabezado</h1>
+
+    <!-- Selector de clase -->
+    <div class="card">Soy una carta con clase card</div>
+    <div class="card card1">Soy una carta con clases card y card1</div>
+    <div class="card card2">Soy una carta con clases card y card2</div>
+
+    <!-- Selector de identificador único (id) -->
+    <button id="eliminar">Eliminar</button>
+
+    <!-- Selector de atributo -->
+    <a href="https://disrup3.com">Ir a disrup3</a>
+
+    <!-- Selector universal -->
+    <p>Este es otro párrafo</p>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de pseudoclases y pseudoelementos en CSS</title>
+</head>
+<style>
+    /* Estilos para el enlace */
+    a {
+        color: blue;
+        text-decoration: none;
+    }
+
+    /* Pseudoclase :hover */
+    a:hover {
+        color: red;
+    }
+
+    /* Pseudoclase :active */
+    a:active {
+        color: green;
+    }
+
+    /* Pseudoclase :visited */
+    a:visited {
+        color: purple;
+    }
+
+    /* Pseudoclase :not() */
+    p:not(.destacado) {
+        color: gray;
+    }
+
+    
+    /* Pseudoclase :nth-child() */
+    li:nth-child(odd) {
+        background-color: #f2f2f2;
+    }
+    /* El valor "odd" se utiliza en la pseudoclase ":nth-child()" 
+    para seleccionar todos los elementos hijos impares del elemento padre.
+    Por ejemplo, si tenemos una lista con varios elementos <li>, 
+    para seleccionar los elementos impares podemos utilizar
+    el selector li:nth-child(odd). */
+
+
+
+    /* Pseudoelemento ::before */
+    p::before {
+        content: "Antes del texto: ";
+        font-weight: bold;
+    }
+
+    /* Pseudoelemento ::after */
+    p::after {
+        content: " Después del texto.";
+        font-style: italic;
+    }
+
+    /* Pseudoelemento ::first-letter */
+    p::first-letter {
+        font-size: 2em;
+        color: red;
+    }
+    img {
+        width: 25%;
+    }
+</style>
+
+<body>
+   
+    <h1>Ejemplo de pseudoclases y pseudoelementos en CSS</h1>
+    <p>Este es un párrafo normal que no está destacado.</p>
+    <p class="destacado">Este es un párrafo que está destacado.</p>
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+    <p>Este es otro párrafo normal que no está destacado.</p>
+    <a href="#">Enlace de ejemplo</a>
+
+    <div style="text-align: center;">
+        <img src="images/pseudoclases.png">
+    </div>
+</body>
+
+</html>

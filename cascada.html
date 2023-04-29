@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascada y especificidad</title>
+</head>
+<style>
+    /* Estilo para todos los párrafos, Este estilo se aplicará a todos los párrafos en la página,
+     independientemente de su clase o id.*/ 
+    p {
+        color: blue;
+    }
+
+    /* Estilo para los párrafos con la clase "clase1" */ 
+    /* Este estilo se aplicará a los párrafos que tengan la clase "clase1". 
+    La especificidad de este selector es menor que la del selector con id "parrafo1". */
+    .clase1 {
+        color: red;
+    }
+
+    /* Estilo para los párrafos con la clase "clase2" */
+    .clase2 {
+        color: green;
+    }
+
+    /* Estilo para el párrafo con el id "parrafo1" 
+    Este estilo se aplicará al párrafo que tenga el id "parrafo1". La especificidad de este selector es mayor que la de los selectores con clase.*/
+    #parrafo1 {
+        color: purple;
+    }
+    img {
+        width: 25%;
+    }
+</style>
+
+<body>
+    <h1>Ejemplo de Especificidad en CSS</h1>
+    <p>Este es un párrafo de ejemplo.</p>
+    <p class="clase1 clase2">Este es otro párrafo de ejemplo.</p>
+    <p id="parrafo1">Este es un tercer párrafo de ejemplo.</p>
+     <!-- el stylo en linea tiene prioridad sobre clases e ids -->
+     <div style="text-align: center;">
+        <img src="images/cascada.png">
+    </div>
+</body>
+
+</html>

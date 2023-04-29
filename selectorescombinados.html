@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores combinados</title>
+</head>
+<style>
+    /* Estilos para los elementos <p> que son hijos directos de la clase "container" */
+    .container>p {
+        color: red;
+    }
+
+    /* Estilos para los elementos <li> que son hijos de la clase "container" */
+    .container li {
+        color: blue;
+    }
+
+    /* Estilos para los elementos <p> que están adyacentes a las etiquetas <div> */
+    div+p {
+        color: green;
+    }
+
+    /* Estilos para los elementos <p> que son hermanos de <div> */
+    div~p {
+        color: purple;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>Soy un título</h1>
+        <p>Soy un párrafo dentro del div</p>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
+        <p>Soy otro párrafo dentro del div</p>
+    </div>
+    <p>Soy un párrafo fuera del div</p>
+    <p>Soy otro párrafo fuera del div</p>
+</body>
+
+</html>
+
+<!-- En este ejemplo, se usan los cuatro tipos de selectores combinadores que se mencionan en la pregunta:
+
+Combinador de hijo directo: .container > p selecciona todos los elementos <p> que son hijos directos de la clase "container".
+Combinador de descendientes: .container li selecciona todos los elementos <li> que son hijos de la clase "container".
+Combinador de elemento adyacente: div + p selecciona todos los elementos <p> que están adyacentes a las etiquetas <div>.
+Combinador general de hermanos: div ~ p selecciona todos los elementos <p> que son hermanos de la etiqueta <div>.
+Espero que esto te sea útil para entender cómo funcionan los selectores combinadores en HTML y CSS. -->
