@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de display flex y grid</title>
+    <style>
+        /* Estilos para el contenedor con display flex */
+        .container-flex {
+            display: flex;
+            /* Se define el contenedor como display flex */
+            flex-wrap: wrap;
+            /* Se indica que los elementos pueden ajustarse a diferentes filas o columnas */
+            justify-content: center;
+            /* Se centran horizontalmente los elementos hijos */
+        }
+
+        /* Estilos para los elementos hijos del contenedor con display flex */
+        .container-flex>div {
+            background-color: #f1c40f;
+            /* Se define el color de fondo del elemento */
+            width: 150px;
+            /* Se define el ancho del elemento */
+            height: 150px;
+            /* Se define la altura del elemento */
+            margin: 10px;
+            /* Se define el margen exterior del elemento */
+            display: flex;
+            /* Se define el elemento como display flex */
+            align-items: center;
+            /* Se centra verticalmente el contenido del elemento */
+            justify-content: center;
+            /* Se centra horizontalmente el contenido del elemento */
+            font-size: 30px;
+            /* Se define el tamaño de la fuente del contenido del elemento */
+            color: #fff;
+            /* Se define el color del contenido del elemento */
+        }
+
+        /* Estilos para el contenedor con display grid */
+        .container-grid {
+            display: grid;
+            /* Se define el contenedor como display grid */
+            grid-template-columns: 1fr 1fr 1fr;
+            /* Se define la estructura de columnas del grid */
+            grid-gap: 10px;
+            /* Se define el espacio entre las celdas del grid */
+        }
+
+        /* Estilos para los elementos hijos del contenedor con display grid */
+        .container-grid>div {
+            background-color: #2ecc71;
+            /* Se define el color de fondo del elemento */
+            height: 150px;
+            /* Se define la altura del elemento */
+            display: flex;
+            /* Se define el elemento como display flex */
+            align-items: center;
+            /* Se centra verticalmente el contenido del elemento */
+            justify-content: center;
+            /* Se centra horizontalmente el contenido del elemento */
+            font-size: 30px;
+            /* Se define el tamaño de la fuente del contenido del elemento */
+            color: #fff;
+            /* Se define el color del contenido del elemento */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Contenedor con elementos hijos</h1>
+
+    <h2>Flexbox</h2>
+    <div class="container-flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <h2>Grid</h2>
+    <div class="container-grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+
+
+</body>
+
+</html>

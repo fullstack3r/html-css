@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caja padding- margin- border</title>
+    <style>
+        /* Estilos para la caja */
+        .box {
+            width: 400px;
+            height: 200px;
+            margin: 20px;
+            padding: 20px;
+            border: 5px solid black;
+        }
+
+        /* Estilos para el texto dentro de la caja */
+        .texto {
+            color: white;
+            background-color: black;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* Estilos para el contenedor de la caja */
+        .contenedor {
+            margin: 20px;
+            padding: 20px;
+            border: 5px solid gray;
+        }
+
+        .fondo {
+            background-color: #111111;
+            background-image: url(images/padding.png);
+            background-repeat: no-repeat;
+            background-size:contain;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Caja con contenido -->
+    <div class="box">
+        <div class="texto">
+            <p>Contenido de la caja</p>
+        </div>
+    </div>
+
+    <!-- Contenedor con caja -->
+    <div class="contenedor">
+        <div class="box fondo"></div>
+    </div>
+
+</body>
+
+</html>
