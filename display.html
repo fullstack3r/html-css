@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de display en HTML y CSS</title>
+</head>
+<style>
+    .imgStyle {
+        display: block;
+        text-align: center;
+    }
+    .imgStyle img {
+        width: 30%;
+    }
+    body {
+        background-color: #111;
+        color: #fff;
+    }
+
+    /* Ejemplo de display en HTML y CSS */
+
+    /* Estilos para los elementos con display block */
+    .block {
+        display: block;
+        background-color: #1f197d;
+        width: 200px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    /* Estilos para los elementos con display inline */
+    .inline {
+        display: inline;
+        background-color: #4f751b;
+        margin-right: 20px;
+    }
+
+    /* Estilos para los elementos con display inline-block */
+    .inline-block {
+        display: inline-block;
+        background-color: #d81c3d;
+        width: 100px;
+        height: 100%;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* Estilos para los elementos con display none */
+    .none {
+        display: none;
+    }
+</style>
+</head>
+
+<body>
+    <h2>Visualización de elementos en HTML y CSS</h2>
+
+    <div class="block">
+        <p>Este es un ejemplo de elemento con display block.</p>
+    </div>
+
+    <span class="inline">Este es un ejemplo de elemento con display inline.</span>
+    <span class="inline">Este es otro ejemplo de elemento con display inline.</span>
+
+    <div class="inline-block">
+        <p>Este es un ejemplo de elemento con display inline-block.</p>
+    </div>
+
+    <div class="inline-block">
+        <p>Este es otro ejemplo de elemento con display inline-block.</p>
+    </div>
+
+    <div class="none">
+        <p>Este es un ejemplo de elemento con display none.</p>
+    </div>
+    <div class="imgStyle">
+        <img src="images/display.png"/>
+    </div>
+    
+
+</body>
+
+</html>
