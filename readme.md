@@ -7,7 +7,7 @@
 
 
 -   [Html semantico](https://github.com/fullstack3r/html-css/tree/new-themes/html)
--   [Selectores basicos](/selectores/readme.md)
+-   [Selectores basicos](/selectores/)
     -   [Selectores, propiedades y valores.](/selectores/selectores.html)
     -   [Selectores Basicos](/selectores/slectoresbasicos.html)
     -   [Selectores combinados](/selectores/selectorescombinados.html)
