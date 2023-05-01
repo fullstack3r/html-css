@@ -18,6 +18,7 @@
 -   [Tipos de display](/display/)
     -   [Block, inline, e inlineblock](/display/display.html)
     -   [Flexbox y CSS grid](/display/displayflex.html)
+-   [Posicionamiento](/display/)    
     
 
 #### lista de las 50 propiedades CSS más comunes para diseñar sitios web

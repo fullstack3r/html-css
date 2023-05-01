@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento</title>
+    <style>
+		.container {
+			border: 2px solid black;
+			height: 300px;
+			position: relative; /* establece la posición relativa del contenedor */
+		}
+
+		.box {
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			margin: 20px;
+			padding: 10px;
+			font-size: 20px;
+			color: white;
+		}
+
+		.static {
+			position: static; /* establece la posición estática del elemento */
+		}
+
+		.relative {
+			position: relative; /* establece la posición relativa del elemento */
+			top: 20px; /* desplaza el elemento 20px hacia abajo */
+			left: 50px; /* desplaza el elemento 50px hacia la derecha */
+		}
+
+		.absolute {
+			position: absolute; /* establece la posición absoluta del elemento */
+			top: 120px; /* desplaza el elemento 120px hacia abajo */
+			right: 50px; /* desplaza el elemento 50px hacia la derecha */
+		}
+
+		.sticky {
+			position: sticky; /* establece la posición fija del elemento */
+			top: 50px; /* fija el elemento 50px desde el borde superior del contenedor */
+		}
+	</style>
+</head>
+<body>
+	<h1>Posicionamiento en CSS</h1>
+	<p>La posición del elemento se la define con la propiedad position, mediante los siguientes valores:</p>
+	<ul>
+		<li>static</li>
+		<li>relative</li>
+		<li>absolute</li>
+		<li>sticky</li>
+	</ul>
+
+	<div class="container">
+		<div class="box static">Posición estática</div>
+		<div class="box relative">Posición relativa</div>
+		<div class="box absolute">Posición absoluta</div>
+		<div class="box sticky">Posición fija</div>
+	</div>
+
+</body>
+    
+</body>
+</html>
