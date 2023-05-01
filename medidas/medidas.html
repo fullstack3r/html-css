@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidas</title>
+</head>
+<style>
+    /* Esto cambiaria el comportamiento nativo de rem
+    originalmente es 1 rem = 16px y con esta clase lo cambiamos 
+    a 1rem = 10px asi es mas facil de calcular */
+    html {
+        font-size: 62.5%;
+    }
+    /* Ejemplo de medidas absolutas */
+    h1 {
+      font-size: 48px; /* px */
+    }
+
+    p {
+      font-size: 2.5cm; /* cm */
+    }
+
+    /* Ejemplo de medidas relativas */
+    .container {
+      font-size: 16px;
+      width: 80%; /* porcentaje */
+      margin: 0 auto; /* píxeles */
+    }
+
+    h2 {
+      font-size: 2rem; /* rem */
+      margin-top: 1em; /* em */
+    }
+
+    p {
+      font-size: 1.5vw; /* vw */
+      line-height: 1.2; /* unidad sin especificar */
+    }
+  </style>
+</head>
+<body>
+  <h1>Unidades de medida en CSS</h1>
+  <div class="container">
+    <h2>Medidas relativas</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu turpis vel augue sollicitudin malesuada a vitae velit. Duis faucibus bibendum magna, nec ultrices sapien ullamcorper ut. Fusce euismod euismod nunc, id venenatis quam dictum non. Nullam ac diam semper, blandit lorem ut, pharetra magna. Praesent commodo consequat augue, quis dapibus arcu suscipit in. Nunc id sagittis dolor, sit amet tempor massa. Proin eget elit vel elit pulvinar imperdiet eu vel leo. Sed molestie, ipsum vel viverra suscipit, libero mauris placerat nisl, ac tincidunt augue arcu vel tortor.</p>
+  </div>
+</body>
+    
+</body>
+</html>

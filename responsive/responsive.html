@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Example</title>
+</head>
+<style>
+    /* Desktop styles */
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav ul li {
+	margin-right: 20px;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+
+section {
+	flex-basis: 33.33%;
+	margin-bottom: 40px;
+}
+
+section h2 {
+	margin-bottom: 10px;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+	header {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	nav {
+		margin-top: 20px;
+	}
+
+	main {
+		padding: 10px;
+	}
+
+	section {
+		flex-basis: 100%;
+	}
+    footer {
+        background-color: #af0000;
+    }
+    header nav {
+        display: none;
+    }
+}
+</style>
+<body>
+    <header>
+		<h1>Responsive Design Example</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h2>Section 1</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, lorem eu scelerisque molestie, lorem est fringilla sapien, ut ullamcorper mauris velit non lorem. Proin non magna non turpis venenatis mattis sit amet quis tortor. Donec sagittis bibendum mi, at accumsan elit volutpat eget. Praesent vel molestie ipsum. Donec vehicula odio nec erat porttitor congue.</p>
+		</section>
+		<section>
+			<h2>Section 2</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, lorem eu scelerisque molestie, lorem est fringilla sapien, ut ullamcorper mauris velit non lorem. Proin non magna non turpis venenatis mattis sit amet quis tortor. Donec sagittis bibendum mi, at accumsan elit volutpat eget. Praesent vel molestie ipsum. Donec vehicula odio nec erat porttitor congue.</p>
+		</section>
+		<section>
+			<h2>Section 3</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, lorem eu scelerisque molestie, lorem est fringilla sapien, ut ullamcorper mauris velit non lorem. Proin non magna non turpis venenatis mattis sit amet quis tortor. Donec sagittis bibendum mi, at accumsan elit volutpat eget. Praesent vel molestie ipsum. Donec vehicula odio nec erat porttitor congue.</p>
+		</section>
+	</main>
+	<footer>
+		<p>Copyright © Responsive Design</p>
+	</footer>
+</body>
+</html>

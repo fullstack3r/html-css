@@ -1,5 +1,9 @@
 <p align="center">
- <img width="100px" src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/cnwgw7caibsyu8djwahj" align="center" alt="GitHub Readme Stats" />
+
+![alt|100](/images/disrup3logo.png)
+
+</div>
+
  <h2 align="center">FullStak3r</h2>
  <p align="center">Front-End Developer HTML-CSS</p>
 
@@ -18,6 +22,10 @@
 -   [Tipos de display](/display/)
     -   [Block, inline, e inlineblock](/display/display.html)
     -   [Flexbox y CSS grid](/display/displayflex.html)
+-   [Posicionamiento](/display/)  
+-   [Apilamiento (z-index)](/z-index/)  
+-   [Unidades de medida](/medidas/)   
+-   [Responsive](/responsive/)    
     
 
 #### lista de las 50 propiedades CSS más comunes para diseñar sitios web
@@ -89,5 +97,9 @@
 50. `background-image`: establece una imagen de fondo en un elemento.
 
 
+
+
 * * *
+
+   [129 propiedades css](https://cssreference.io/)
 
