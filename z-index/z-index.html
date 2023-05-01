@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+</head>
+<style>
+    .contenedor {
+        position: relative;
+    }
+    .contenedor img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .contenedor p {
+        z-index: 0;
+        position: absolute;
+    }
+    .contenedor h1 {
+        z-index: 2;
+        position: absolute;
+    }
+</style>
+
+<body>
+    <div class="contenedor">
+        <p>Este es un texto de ejemplo.</p>
+        <img src="/images/nft.png" alt="Ejemplo">
+        <h1>Texto visible</h1>
+    </div>
+</body>
+
+</html>
